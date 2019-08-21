@@ -1,0 +1,33 @@
+body {
+  margin: 0 auto;
+  background: floralwhite;
+}
+
+svg {
+  margin-top: 10%;
+}
+
+.line {
+  stroke: rgb(182, 64, 64);
+  stroke-width: 5px;
+  stroke-linecap: round;
+  fill: none;
+  stroke-dasharray: 3317;
+  stroke-dashoffset: 3317;
+  animation: dash 100s linear infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 3317;
+  }
+  to {
+    stroke-dashoffset: -3317;
+  }
+}
+
+#change-data {
+  margin: 10px auto;
+  padding: 10px;
+  text-align: center;
+}
